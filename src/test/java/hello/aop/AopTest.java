@@ -3,6 +3,7 @@ package hello.aop;
 import hello.aop.aop.AspectV1;
 import hello.aop.aop.AspectV2;
 import hello.aop.aop.AspectV3;
+import hello.aop.aop.AspectV4Pointcut;
 import hello.aop.order.OrderRepository;
 import hello.aop.order.OrderService;
 import lombok.RequiredArgsConstructor;
@@ -16,7 +17,7 @@ import org.springframework.context.annotation.Import;
 
 @Slf4j
 @SpringBootTest
-@Import(AspectV3.class)
+@Import(AspectV4Pointcut.class)
 public class AopTest {
 
     @Autowired
