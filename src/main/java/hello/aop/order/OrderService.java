@@ -10,8 +10,9 @@ import org.springframework.stereotype.Service;
 public class OrderService {
     private final OrderRepository orderRepository;
 
-    public void orderItem(String itemId) {
+    public String orderItem(String itemId) {
         log.info("[orderService] 실행");
         orderRepository.save(itemId);
+        return "orderItem";
     }
 }
